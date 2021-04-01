@@ -1,7 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE html>		
 <html>
   <head>
-    <title>Cosmelog2021</title>
+    <meta charset="UTF-8">
+    <head>
+    <title>Cosmelog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
@@ -10,6 +12,26 @@
   </head>
 
   <body>
+    <!-- header -->
+    <header>
+      <h1 class="headline">
+      <%= link_to "cosmelog", root_path, class: :nav_listitem %>
+      </h1>
+      <div class="nav_list">
+        <div class="nav_listitem">
+        <%= link_to "ログイン", class: :nav_listitem %>
+        <%= link_to "新規登録", class: :nav_listitem %>
+        </div>
+      </div>
+    </header>
+    <!-- サイトの中身部分 -->
     <%= yield %>
+    <!-- footer -->
+    <footer>
+      <ul class="footer-menu">
+      <ul class="footer-menu">
+      </ul>
+      <p>© All rights reserved by nana ikegami </p>
+    </footer>
   </body>
 </html>
