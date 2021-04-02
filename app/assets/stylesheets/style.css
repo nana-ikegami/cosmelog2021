@@ -1,6 +1,6 @@
 /* リセットCSS */
 * {
-  margin:0; padding:0;
+margin:0; padding:0;
 }
 
 /* ヘッダー */
@@ -104,13 +104,32 @@ border: #f0bbd6 2px solid;
 color: #f0bbd6;
 }
 .submitbutun{
-  background-color: #f0bbd6;
-  border: #f0bbd6 2px solid;
-  color: azure;
-  margin: 10px;
+background-color: #f0bbd6;
+border: #f0bbd6 2px solid;
+color: azure;
+margin: 10px;
 }
 h2{
 font-family: 'Train One', cursive;
 margin-top: 50px;
 margin-bottom: 10px;
+}
+
+  /* 投稿フォーム */
+.cosme_title{
+border: #f0bbd6 2px solid;
+color: #f0bbd6;
+}
+.cosme_text{
+border: #f0bbd6 2px solid;
+color: #f0bbd6;
+}
+.cosme_image{
+color: #f0bbd6;
+}
+.form__btn{
+background-color: #f0bbd6;
+border: #f0bbd6 2px solid;
+color: azure;
+margin: 10px;
 }
