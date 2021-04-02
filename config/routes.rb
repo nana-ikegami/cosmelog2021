@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'cosmes/index'
-  get 'messages/index'
+  devise_for :users
+  # get 'cosmes/index'
   root to: "cosmes#index"
+  resources :cosmes
 end

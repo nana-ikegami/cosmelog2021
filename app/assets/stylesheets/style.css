@@ -5,76 +5,112 @@
 
 /* ヘッダー */
 header {
-  height: 100px;
-  width: 100%;
-  padding: 15px 0;
-  background-color: #f0bbd6;
-  color: white;
-  }
-  header .headline{
-  line-height: 100px;
-  float: left;
-  font-size: 30px;
-  margin-left: 100px;
-  }
+height: 100px;
+width: 100%;
+padding: 15px 0;
+background-color: #f0bbd6;
+color: white;
+}
+header .headline{
+line-height: 100px;
+float: left;
+font-size: 30px;
+margin-left: 100px;
+}
 .nav_list {
-  line-height: 100px;
-  margin-left: 30px;
-  display: flex;
-  justify-content: flex-end;
-  }
-  .nav_listitem a{
-  text-decoration: none;
-  font-family: 'Train One', cursive;
-  color: white;
-  }
-  
-  .headline a{
-  text-decoration: none;
-  font-family: 'Train One', cursive;
-  color: white;
-  }
-  
-  .nav_listitem {
-  display: inline-block;
-  margin: 0 20px;
-  display: flex;
-  justify-content: space-around;
-  width:30%;
-  }
-  
-  .inner {
-  width: 1024px;
-  margin: 0 auto;
-  }
-  
-  /* メイン */
+line-height: 100px;
+margin-left: 30px;
+display: flex;
+justify-content: flex-end;
+}
+.nav_listitem a{
+text-decoration: none;
+font-family: 'Train One', cursive;
+color: white;
+}
+
+.headline a{
+text-decoration: none;
+font-family: 'Train One', cursive;
+color: white;
+}
+
+.nav_listitem {
+display: inline-block;
+margin: 0 20px;
+display: flex;
+justify-content: space-around;
+width:30%;
+}
+
+/* メイン */
 
 .greeting{
-  margin-bottom: 20px;
-  color: #f0bbd6;
-  }
-  .greeting__link{
-  text-decoration: underline;
-  }
-  .card__wrapper {
+margin-bottom: 20px;
+color: #f0bbd6;
+}
+.greeting__link{
+text-decoration: underline;
+}
+.card__wrapper {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+min-height: 100px;
+}
+.inner {
+width: 1024px;
+margin: 0 auto;
+overflow: scroll;
+}
+
+  /* フッター */
+body,
+#wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  min-height: calc(89vh - 161px);
-  }
-  
-    /* フッター */
-  footer{
-  width: 100%;
-  height: 100px;
-  height: 90px;
+  flex-direction: column;
+  min-height: 100vh;
+}
+footer{
+width: 100%;
+height: 100px;
+height: 90px;
+background-color: #f0bbd6;
+color: white;
+text-align: center;
+margin-top: auto;
+
+}
+ul.footer-menu li {
+display: inline;
+}
+
+  /* ログイン新規登録 */
+.container{
+color: #f0bbd6;
+margin-left: 30px;
+}
+.emailform {
+border: #f0bbd6 2px solid;
+color: #f0bbd6;
+}
+.paswordform{
+border: #f0bbd6 2px solid;
+color: #f0bbd6;
+}
+.nameform{
+border: #f0bbd6 2px solid;
+color: #f0bbd6;
+}
+.submitbutun{
   background-color: #f0bbd6;
-  color: white;
-  text-align: center;
-  }
-  ul.footer-menu li {
-  display: inline;
-  }
-  
+  border: #f0bbd6 2px solid;
+  color: azure;
+  margin: 10px;
+}
+h2{
+font-family: 'Train One', cursive;
+margin-top: 50px;
+margin-bottom: 10px;
+}
