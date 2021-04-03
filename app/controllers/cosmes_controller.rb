@@ -17,7 +17,7 @@ class CosmesController < ApplicationController
   end
 
   private
-  def tweet_params
+  def cosme_params
     params.require(:cosme).permit(:name, :image, :text, :title).merge(user_id: current_user.id)
   end
 end
