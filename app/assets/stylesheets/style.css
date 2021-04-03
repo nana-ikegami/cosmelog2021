@@ -65,22 +65,27 @@ margin-bottom: 40px;
 }
 .card__img {
 margin-bottom: 16px;
+width: 150x;
+height: 250px;
 }
 .card__title {
 display: block;
 font-size: 20px;
 margin-bottom: 8px;
 font-weight: bold;
+color: #f0bbd6;
+text-decoration: none;
 }
 .card__summary {
 font-size: 16px;
+color: #f0bbd6;
 }
 .card__user {
 display: block;
 font-size: 12px;
-color: #999;
+color: #f0bbd6;
 text-align: right;
-text-decoration: underline;
+text-decoration: none;
 }
 .inner {
 width: 1024px;
