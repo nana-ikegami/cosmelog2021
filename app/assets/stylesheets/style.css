@@ -117,7 +117,7 @@ display: inline;
   /* ログイン新規登録 */
 .container{
 color: #f0bbd6;
-margin-left: 30px;
+margin-left: 80px;
 }
 .emailform {
 border: #f0bbd6 2px solid;
@@ -139,7 +139,7 @@ margin: 10px;
 }
 h2{
 font-family: 'Train One', cursive;
-margin-top: 50px;
+margin-top: 70px;
 margin-bottom: 10px;
 }
 
