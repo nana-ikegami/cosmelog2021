@@ -6,7 +6,7 @@
       </p>
       <%= link_to "by#{@cosme.user.name}", user_path(@cosme.user.id), class: :cosme__user %>
       <% if user_signed_in? && current_user.id == @cosme.user_id %>
-        <div class="prototype__manage">
+        <div class="cosme__manage">
           <%= link_to "編集する", edit_prototype_path(@cosme.id), class: :cosme__btn %>
           <%= link_to "削除する", prototype_path(@cosme.id), class: :cosme__btn, method: :delete %>
         </div>
