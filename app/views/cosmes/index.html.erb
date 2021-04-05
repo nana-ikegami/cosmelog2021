@@ -1,13 +1,16 @@
 <main class="main">		
   <div class="inner">
-    <div class="greeting">
-    <img src="/assets/index.jpg" alt="", class="image">
-    <p>お気に入りコスメを共有しよう</p>
-    </div>
+   <% if user_signed_in? %>
+      <div class="greeting">
+      <br>今日もメイクを楽しんでくださいね
+      <%= link_to "#{current_user.name}さん", user_path(current_user.id), class: :greeting__link%><br>
+      <img src="/assets/index.jpg" alt="", class="image">
+      <p>お気に入りコスメを共有しよう</p>
+      </div>
+    <% end %>
     <div class="card__wrapper">
     <p>NewCosmes</p>
       <%= render partial: 'cosme', collection: @cosmes %>
-    <%# 投稿機能実装後、部分テンプレートで投稿一覧を表示する %>
     </div>
   </div>
 </main>
