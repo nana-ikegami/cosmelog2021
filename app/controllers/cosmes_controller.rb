@@ -16,6 +16,10 @@ class CosmesController < ApplicationController
     end
   end
 
+  def show
+    @cosme = Cosme.find(params[:id])
+  end
+
   private
   def cosme_params
     params.require(:cosme).permit(:name, :image, :text, :title).merge(user_id: current_user.id)
