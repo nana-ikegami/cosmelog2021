@@ -138,10 +138,20 @@ ul.footer-menu li {
 display: inline;
 }
 
-  /* ログイン新規登録 */
+/* ログイン新規登録 */
 .container{
 color: #f0bbd6;
-margin-left: 80px;
+margin-left: 150px;
+background-image: url(image2.jpg);
+background-repeat:  no-repeat;
+background-position: 80%;
+background-size: contain;
+margin-top: 90px;
+}
+.container p{
+font-family: 'Train One', cursive;
+font-size: 22px;
+padding-bottom: 20px;
 }
 .emailform {
 border: #f0bbd6 2px solid;
@@ -159,12 +169,7 @@ color: #f0bbd6;
 background-color: #f0bbd6;
 border: #f0bbd6 2px solid;
 color: azure;
-margin: 10px;
-}
-h2{
-font-family: 'Train One', cursive;
-margin-top: 70px;
-margin-bottom: 10px;
+margin-top: 30px;
 }
 
   /* 投稿フォーム */
@@ -185,5 +190,3 @@ border: #f0bbd6 2px solid;
 color: azure;
 margin: 10px;
 }
-
-
