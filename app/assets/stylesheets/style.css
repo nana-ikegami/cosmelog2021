@@ -50,7 +50,6 @@ margin-bottom: 20px;
 color: #f0bbd6;
 position: relative;
 }
-
 .greeting p {
 position: absolute;
 top: 470px;
@@ -59,7 +58,6 @@ font-size: 33px;
 color: #f7aad2;
 font-family: 'Train One', cursive;
 }
-
 .greeting__link{
 text-decoration: underline;
 }
@@ -140,53 +138,54 @@ display: inline;
 
 /* ログイン新規登録 */
 .container{
-color: #f0bbd6;
+color: #f79aca;
 margin-left: 150px;
 background-image: url(image2.jpg);
 background-repeat:  no-repeat;
-background-position: 80%;
-background-size: contain;
-margin-top: 90px;
+background-size:cover;
+width:400px;
+height:400px;
+margin-top: 40px;
 }
 .container p{
 font-family: 'Train One', cursive;
 font-size: 22px;
-padding-bottom: 20px;
+padding-top: 50px;
 }
 .emailform {
-border: #f0bbd6 2px solid;
-color: #f0bbd6;
+border: #f79aca 2px solid;
+color: #f79aca;
 }
 .paswordform{
-border: #f0bbd6 2px solid;
-color: #f0bbd6;
+border: #f79aca 2px solid;
+color: #f79aca;
 }
 .nameform{
-border: #f0bbd6 2px solid;
-color: #f0bbd6;
+border: #f79aca 2px solid;
+color: #f79aca;
 }
 .submitbutun{
-background-color: #f0bbd6;
-border: #f0bbd6 2px solid;
+background-color: #f79aca;
+border: #f79aca 2px solid;
 color: azure;
 margin-top: 30px;
 }
 
   /* 投稿フォーム */
 .cosme_title{
-border: #f0bbd6 2px solid;
-color: #f0bbd6;
+border: #f79aca 2px solid;
+color: #f79aca;
 }
 .cosme_text{
-border: #f0bbd6 2px solid;
-color: #f0bbd6;
+border: #f79aca 2px solid;
+color: #f79aca;
 }
 .cosme_image{
-color: #f0bbd6;
+color: #f79aca;
 }
 .form__btn{
-background-color: #f0bbd6;
-border: #f0bbd6 2px solid;
+background-color: #f79aca;
+border: #f79aca 2px solid;
 color: azure;
-margin: 10px;
+margin-top: 30px;
 }
