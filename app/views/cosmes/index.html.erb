@@ -1,10 +1,11 @@
 <main class="main">		
   <div class="inner">
     <div class="greeting">
-    <h2>お気に入りコスメを投稿してね</h2>
-    コスメ好きのみんなでお気に入りコスメを共有しよう♡
+    <img src="/assets/index.jpg" alt="", class="image">
+    <p>お気に入りコスメを共有しよう</p>
     </div>
     <div class="card__wrapper">
+    <p>NewCosmes</p>
       <%= render partial: 'cosme', collection: @cosmes %>
     <%# 投稿機能実装後、部分テンプレートで投稿一覧を表示する %>
     </div>

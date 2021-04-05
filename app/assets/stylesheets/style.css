@@ -48,7 +48,18 @@ width:30%;
 .greeting{
 margin-bottom: 20px;
 color: #f0bbd6;
+position: relative;
 }
+
+.greeting p {
+position: absolute;
+top: 470px;
+left: 450px;
+font-size: 33px;
+color: #f7aad2;
+font-family: 'Train One', cursive;
+}
+
 .greeting__link{
 text-decoration: underline;
 }
@@ -58,6 +69,13 @@ flex-wrap: wrap;
 justify-content: space-between;
 align-items: center;
 min-height: calc(100vh - 200px);
+margin-top: 100px;
+}
+.card__wrapper p{
+font-size: 22px;
+color: #f7aad2;
+font-family: 'Train One', cursive;
+padding-bottom: 70px;
 }
 .card {
 width: calc((100% - 50px) / 5);
@@ -92,7 +110,13 @@ width: 1024px;
 margin: 0 auto;
 overflow: scroll;
 }
-
+.image{
+width: 90%;
+height: 80vh;
+display:block;
+margin:auto;
+margin-top: 70px;
+}
   /* フッター */
 body,
 #wrapper {
@@ -161,3 +185,5 @@ border: #f0bbd6 2px solid;
 color: azure;
 margin: 10px;
 }
+
+
