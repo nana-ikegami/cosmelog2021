@@ -1,0 +1,33 @@
+<main class="main">
+  <div class="inner">
+    <div class="cosme__wrapper">
+      <p class="cosme__hedding">
+        <%= @cosme.title%>
+      </p>
+      <%= link_to "by#{@cosme.user.name}", user_path(@cosme.user.id), class: :cosme__user %>
+      <% if user_signed_in? && current_user.id == @cosme.user_id %>
+        <div class="cosme__manage">
+          <%= link_to "編集する", edit_cosme_path(@cosme.id), class: :cosme__btn %>
+          <%= link_to "削除する", cosme_path(@cosme.id), class: :cosme__btn, method: :delete %>
+        </div>
+      <% end %>
+      <div class="cosme__image">
+        <%= image_tag @cosme.image %>
+      </div>
+      <div class="cosme__body">
+        <div class="cosme__detail">
+          <p class="detail__title">タイトル</p>
+          <p class="detail__message">
+            <%= @cosme.title %>
+          </p>
+        </div>
+        <div class="cosme__detail">
+          <p class="detail__title">コスメの紹介文</p>
+          <p class="detail__message">
+            <%= @cosme.text %>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

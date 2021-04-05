@@ -1,6 +1,6 @@
 /* リセットCSS */
 * {
-  margin:0; padding:0;
+margin:0; padding:0;
 }
 
 /* ヘッダー */
@@ -48,6 +48,15 @@ width:30%;
 .greeting{
 margin-bottom: 20px;
 color: #f0bbd6;
+position: relative;
+}
+.greeting p {
+position: absolute;
+top: 470px;
+left: 450px;
+font-size: 33px;
+color: #f7aad2;
+font-family: 'Train One', cursive;
 }
 .greeting__link{
 text-decoration: underline;
@@ -57,20 +66,61 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 align-items: center;
-min-height: 100px;
+min-height: calc(100vh - 200px);
+margin-top: 100px;
+}
+.card__wrapper p{
+font-size: 22px;
+color: #f7aad2;
+font-family: 'Train One', cursive;
+padding-bottom: 70px;
+}
+.card {
+width: calc((100% - 50px) / 5);
+margin-bottom: 40px;
+}
+.card__img {
+margin-bottom: 16px;
+width: 150x;
+height: 250px;
+}
+.card__title {
+display: block;
+font-size: 20px;
+margin-bottom: 8px;
+font-weight: bold;
+color: #f0bbd6;
+text-decoration: none;
+}
+.card__summary {
+font-size: 16px;
+color: #f0bbd6;
+}
+.card__user {
+display: block;
+font-size: 12px;
+color: #f0bbd6;
+text-align: right;
+text-decoration: none;
 }
 .inner {
 width: 1024px;
 margin: 0 auto;
 overflow: scroll;
 }
-
+.image{
+width: 90%;
+height: 80vh;
+display:block;
+margin:auto;
+margin-top: 70px;
+}
   /* フッター */
 body,
 #wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
 }
 footer{
 width: 100%;
@@ -86,31 +136,130 @@ ul.footer-menu li {
 display: inline;
 }
 
-  /* ログイン新規登録 */
+/* ログイン新規登録 */
 .container{
-color: #f0bbd6;
-margin-left: 30px;
+color: #f79aca;
+margin-left: 150px;
+background-image: url(image2.jpg);
+background-repeat:  no-repeat;
+background-size:cover;
+width:400px;
+height:400px;
+margin-top: 40px;
+}
+.container p{
+font-family: 'Train One', cursive;
+font-size: 22px;
+padding-top: 50px;
 }
 .emailform {
-border: #f0bbd6 2px solid;
-color: #f0bbd6;
+border: #f79aca 2px solid;
+color: #f79aca;
 }
 .paswordform{
-border: #f0bbd6 2px solid;
-color: #f0bbd6;
+border: #f79aca 2px solid;
+color: #f79aca;
 }
 .nameform{
-border: #f0bbd6 2px solid;
-color: #f0bbd6;
+border: #f79aca 2px solid;
+color: #f79aca;
 }
 .submitbutun{
-  background-color: #f0bbd6;
-  border: #f0bbd6 2px solid;
-  color: azure;
-  margin: 10px;
+background-color: #f79aca;
+border: #f79aca 2px solid;
+color: azure;
+margin-top: 30px;
 }
-h2{
-font-family: 'Train One', cursive;
-margin-top: 50px;
-margin-bottom: 10px;
+
+  /* 投稿フォーム */
+.cosme_title{
+border: #f79aca 2px solid;
+color: #f79aca;
+}
+.cosme_text{
+border: #f79aca 2px solid;
+color: #f79aca;
+}
+.cosme_image{
+color: #f79aca;
+}
+.form__btn{
+background-color: #f79aca;
+border: #f79aca 2px solid;
+color: azure;
+margin-top: 30px;
+}
+
+/* 詳細ページ */
+.cosme__wrapper{
+min-height: calc(100vh - 161px);
+}
+.cosme__hedding{
+font-size: 24px;
+font-weight: bold;
+text-align: center;
+}
+.cosme__user{
+display: block;
+font-size: 16px;
+color: #999;
+text-align: center;
+text-decoration: underline;
+}
+.cosme__image{
+width: 40%;
+margin: 0 auto;
+padding: 16px 0;
+}
+.cosme__detail{
+display: flex;
+align-items: center;
+flex-direction: column;
+margin-bottom: 8px;
+}
+.detail__title{
+font-size: 20px;
+font-weight: bold;
+}
+.cosme__manage{
+display: flex;
+justify-content: center;
+padding-top: 16px;
+}
+.cosme__btn{
+display: block;
+padding: 0.4em 1.6em;
+font-size: 0.4em;
+color: #999;
+text-decoration: none;
+user-select: none;
+border: 1px #999 solid;
+border-radius: 3px;
+transition: 0.4s ease;
+margin: 0 4px;
+}
+.cosme__btn:hover{
+color: #fff;
+background: #999;
+}
+
+.cosme__comments{
+background-color: #f6f6f6;
+padding: 20px;
+margin: 28px 0 40px 0;
+}
+
+.comments_lists{
+padding-left: 20px;
+}
+
+.comments_list{
+list-style-type: square;
+padding-bottom: 5px;
+}
+
+.comment_user{
+font-size: 16px;
+color: #999;
+text-decoration: underline;
 }
