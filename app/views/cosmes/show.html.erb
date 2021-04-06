@@ -4,15 +4,15 @@
       <p class="cosme__hedding">
         <%= @cosme.title%>
       </p>
-      <%= link_to "by#{@cosme.user.name}", user_path(@cosme.user.id), class: :cosme__user %>
+      <%= link_to "by#{@cosme.user.name}", user_path(@cosme.user.id), class:"cosme__user" %>
       <% if user_signed_in? && current_user.id == @cosme.user_id %>
         <div class="cosme__manage">
-          <%= link_to "編集する", edit_cosme_path(@cosme.id), class: :cosme__btn %>
-          <%= link_to "削除する", cosme_path(@cosme.id), class: :cosme__btn, method: :delete %>
+          <%= link_to "編集する", class:"cosme__manage"%>
+          <%= link_to "削除する", class:"cosme__manage"%>
         </div>
       <% end %>
-      <div class="cosme__image">
-        <%= image_tag @cosme.image %>
+      <div class="cosme_imagewrapper">
+        <%= image_tag @cosme.image, class:"cosme__image" %>
       </div>
       <div class="cosme__body">
         <div class="cosme__detail">
