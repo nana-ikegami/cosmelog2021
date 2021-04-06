@@ -1,20 +1,20 @@
 <div class="contents row">
   <div class="container">
-    <p>Log in</p>
+    <p>ログイン</p>
     <%= form_with model: @user, url: user_session_path, id: 'new_user', class: 'new_user', local: true do |f| %>
       <div class="field">
-        <%= f.label :email %><br />
+        <%= f.label :メールアドレスを入力してください %><br />
         <%= f.email_field :email, autofocus: true, class: 'emailform' %>
       </div>
 
       <div class="field">
-        <%= f.label :password %><br />
+        <%= f.label :パスワードを入力してください %><br />
         <%= f.password_field :password, autocomplete: "off", class: 'paswordform' %>
       </div>
 
 
       <div class="actions">
-        <%= f.submit "Log in", class: 'submitbutun' %>
+        <%= f.submit "ログイン", class: 'submitbutun' %>
       </div>
     <% end %>
   </div>
