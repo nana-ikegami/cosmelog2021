@@ -5,7 +5,7 @@
       <%= render "devise/shared/error_messages", resource: resource %>
 
       <div class="field">
-        <%= f.label :名前を記入してください %> <em>(6文字以内)</em><br />
+        <%= f.label :名前を入力してください %> <em>(6文字以内)</em><br />
         <%= f.text_field :name, autofocus: true, class: 'nameform'%>
       </div>
       <div class="field">
@@ -14,7 +14,7 @@
       </div>
 
       <div class="field">
-        <%= f.label :パスワードを記入してください %>
+        <%= f.label :パスワードを入力してください %>
         <% if @minimum_password_length %>
           <em>(<%= @minimum_password_length %>文字以上)</em>
         <% end %><br />
@@ -22,7 +22,7 @@
       </div>
 
       <div class="field">
-        <%= f.label :もう一度パスワードを記入してください %><br />
+        <%= f.label :もう一度パスワードを入力してください %><br />
         <%= f.password_field :password_confirmation, autocomplete: "off",class: 'paswordform' %>
       </div>
 
