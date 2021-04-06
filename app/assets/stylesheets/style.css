@@ -27,12 +27,14 @@ justify-content: flex-end;
 text-decoration: none;
 font-family: 'Train One', cursive;
 color: white;
+font-size: 17px;
 }
 
 .headline a{
 text-decoration: none;
 font-family: 'Train One', cursive;
 color: white;
+font-size: 33px;
 }
 
 .nav_listitem {
