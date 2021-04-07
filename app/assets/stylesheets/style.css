@@ -100,12 +100,12 @@ overflow: scroll;
 .image{
 width: 90%;
 height: 80vh;
-display:block;
-margin:auto;
+display: block;
+margin: auto;
 margin-top: 60px;
 }
 .font{
-color:#f79aca;
+color: #f79aca;
 font-family: 'Train One', cursive;
 font-size: 35px;
 }
@@ -135,10 +135,10 @@ display: inline;
 color: #f79aca;
 margin: 40px 520px;
 background-image: url(image2.jpg);
-background-repeat:  no-repeat;
+background-repeat: no-repeat;
 background-size:cover;
-width:400px;
-height:400px;
+width: 400px;
+height: 400px;
 }
 .container p{
 font-family: 'Train One', cursive;
