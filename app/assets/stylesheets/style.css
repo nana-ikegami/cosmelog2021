@@ -50,15 +50,7 @@ width:30%;
 .greeting{
 margin-bottom: 20px;
 color: #f0bbd6;
-position: relative;
-}
-.greeting p {
-position: absolute;
-top: 500px;
-left: 450px;
-font-size: 33px;
-color: #f7aad2;
-font-family: 'Train One', cursive;
+font-size: 16px;
 }
 .greeting__link{
 text-decoration: none;
@@ -72,12 +64,6 @@ align-items: center;
 min-height: calc(100vh - 200px);
 margin-top: 100px;
 }
-.card__wrapper p{
-font-size: 22px;
-color: #f7aad2;
-font-family: 'Train One', cursive;
-padding-bottom: 70px;
-}
 .card {
 width: calc((100% - 50px) / 5);
 margin-bottom: 40px;
@@ -89,7 +75,7 @@ height: 250px;
 }
 .card__title {
 display: block;
-font-size: 20px;
+font-size: 16px;
 margin-bottom: 8px;
 font-weight: bold;
 color: #f0bbd6;
@@ -114,9 +100,14 @@ overflow: scroll;
 .image{
 width: 90%;
 height: 80vh;
-display:block;
-margin:auto;
+display: block;
+margin: auto;
 margin-top: 60px;
+}
+.font{
+color: #f79aca;
+font-family: 'Train One', cursive;
+font-size: 35px;
 }
   /* フッター */
 body,
@@ -142,13 +133,12 @@ display: inline;
 /* ログイン新規登録 */
 .container{
 color: #f79aca;
-margin-left: 150px;
+margin: 40px 520px;
 background-image: url(image2.jpg);
-background-repeat:  no-repeat;
+background-repeat: no-repeat;
 background-size:cover;
-width:400px;
-height:400px;
-margin-top: 40px;
+width: 400px;
+height: 400px;
 }
 .container p{
 font-family: 'Train One', cursive;
@@ -201,16 +191,30 @@ min-height: calc(100vh - 161px);
 font-size: 24px;
 font-weight: bold;
 text-align: center;
+color: #f7aad2;
+padding-top: 50px;
 }
 .cosme__user{
 display: block;
 font-size: 16px;
-color: #999;
+color: #f0bbd6;
 text-align: center;
-text-decoration: underline;
+text-decoration: none;
 }
 .cosme__image{
-width: 40%;
+width: 250px;
+height: 350px;
+}
+.cosme__manage a{
+color: #f7aad2;
+text-decoration: none;
+font-family: 'Train One', cursive;
+font-size: 17px;
+padding: 0 10px 0 10px;
+}
+.cosme_imagewrapper{
+width: 250px;
+height: 370px;
 margin: 0 auto;
 padding: 16px 0;
 }
@@ -223,27 +227,16 @@ margin-bottom: 8px;
 .detail__title{
 font-size: 20px;
 font-weight: bold;
+color: #f0bbd6;
+}
+.detail__message{
+font-size: 16px;
+color: #f0bbd6;
 }
 .cosme__manage{
 display: flex;
 justify-content: center;
 padding-top: 16px;
-}
-.cosme__btn{
-display: block;
-padding: 0.4em 1.6em;
-font-size: 0.4em;
-color: #999;
-text-decoration: none;
-user-select: none;
-border: 1px #999 solid;
-border-radius: 3px;
-transition: 0.4s ease;
-margin: 0 4px;
-}
-.cosme__btn:hover{
-color: #fff;
-background: #999;
 }
 
 .cosme__comments{
@@ -263,6 +256,6 @@ padding-bottom: 5px;
 
 .comment_user{
 font-size: 16px;
-color: #999;
+color: #f0bbd6;
 text-decoration: underline;
 }
