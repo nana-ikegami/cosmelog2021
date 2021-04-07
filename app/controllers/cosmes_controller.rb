@@ -25,6 +25,19 @@ class CosmesController < ApplicationController
   end
 
   def update
+    @cosme = Cosme.find(params[:id])
+    
+    if @cosme.update(cosme_params)
+      redirect_to cosme_path(@cosme.id)
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @cosme = Cosme.find(params[:id])
+    @cosme.destroy
+    redirect_to root_path
   end
 
   private
