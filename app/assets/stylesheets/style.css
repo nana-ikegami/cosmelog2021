@@ -50,15 +50,7 @@ width:30%;
 .greeting{
 margin-bottom: 20px;
 color: #f0bbd6;
-position: relative;
-}
-.greeting p {
-position: absolute;
-top: 500px;
-left: 450px;
-font-size: 33px;
-color: #f7aad2;
-font-family: 'Train One', cursive;
+font-size: 20px;
 }
 .greeting__link{
 text-decoration: none;
@@ -111,6 +103,11 @@ height: 80vh;
 display:block;
 margin:auto;
 margin-top: 60px;
+}
+.font{
+color:#f79aca;
+font-family: 'Train One', cursive;
+font-size: 35px;
 }
   /* フッター */
 body,
