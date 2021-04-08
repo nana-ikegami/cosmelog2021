@@ -180,7 +180,7 @@ color: #f79aca;
 background-color: #f79aca;
 border: #f79aca 2px solid;
 color: azure;
-margin-top: 30px;
+margin: 20px 0;
 }
 
 /* 詳細ページ */
@@ -238,24 +238,61 @@ display: flex;
 justify-content: center;
 padding-top: 16px;
 }
-
 .cosme__comments{
-background-color: #f6f6f6;
+background-color:#ffffff;
 padding: 20px;
 margin: 28px 0 40px 0;
+text-align: center;
+color: #f7aad2;
+font-size: 16px;
 }
-
-.comments_lists{
-padding-left: 20px;
-}
-
-.comments_list{
-list-style-type: square;
-padding-bottom: 5px;
-}
-
 .comment_user{
 font-size: 16px;
 color: #f0bbd6;
-text-decoration: underline;
+text-decoration: none;
+}
+.coment_text{
+border: #f79aca 2px solid;
+color: #f0bbd6;
+}
+.text{
+color: #f0bbd6;
+}
+
+/* ユーザーページ */
+.user__wrapper{
+min-height: calc(100vh - 161px);
+color: #f0bbd6;
+}
+.user__wrapper h2{
+color: #f0bbd6;
+font-family: 'Train One', cursive;
+font-size: 20px;
+}
+.table{
+border-collapse: collapse;
+margin-bottom: 32px;
+width: 50%;
+}
+.table__col1{
+text-align: left;
+font-weight: bold;
+background: #fcf5f8;
+border-collapse: collapse;
+border: 1px solid #f5f5f5;
+width: 30%;
+padding: 8px;
+}
+.table__col2{
+text-align: left;
+border: 1px solid #f5f5f5;
+border-collapse: collapse;
+width: 70%;
+padding: 16px 8px;
+}
+.user__card {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
 }
