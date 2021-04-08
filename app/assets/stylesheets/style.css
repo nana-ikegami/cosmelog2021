@@ -296,3 +296,28 @@ flex-wrap: wrap;
 justify-content: space-between;
 align-items: center;
 }
+
+/* 検索機能 */
+.search-form {
+text-align: center;
+padding-top: 32px;
+}
+.search-form .search-input {
+width: 30%;
+margin-right: 10px;
+}
+.search-form .search-btn {
+width: 10%;
+}
+.search-input{
+border: #f79aca 2px solid;
+color: #f0bbd6;
+}
+.search-btn{
+  background-color: #f79aca;
+  border: #f79aca 2px solid;
+  color: azure;
+}
+.contents.row{
+margin: 30px 0 0 30px;
+}

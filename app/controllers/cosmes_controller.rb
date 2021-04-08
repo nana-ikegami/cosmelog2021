@@ -42,6 +42,13 @@ class CosmesController < ApplicationController
     redirect_to root_path
   end
 
+  def search
+    unless user_signed_in?
+      redirect_to root_path
+    end
+    @cosmes = Cosme.search(params[:keyword])
+  end
+  
   private
   def cosme_params
     params.require(:cosme).permit(:name, :image, :text, :title).merge(user_id: current_user.id)
