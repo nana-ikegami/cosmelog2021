@@ -6,4 +6,13 @@ class Cosme < ApplicationRecord
   validates :title, presence: true
   validates :text, presence: true
   validates :image, presence: true
+
+  def self.search(search)
+    if search != ""
+      Cosme.where(['text LIKE ? OR title LIKE ?', "%#{search}%", "%#{search}%"])
+    else
+      Cosme.all
+    end
+  end
+
 end
