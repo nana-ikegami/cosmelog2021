@@ -20,9 +20,21 @@ RSpec.describe Cosme, type: :model do
       end
 
       it 'ユーザーが紐付いていなければ投稿できない' do
+        @cosme.user = nil
+        @cosme.valid?
+        expect(@cosme.errors.full_messages).to include('User must exist')
       end
 
       it 'タイトルが空では投稿できない' do
+        @cosme.title = ''
+        @cosme.valid?
+        expect(@cosme.errors.full_messages).to include("Title can't be blank")
+      end
+
+      it '画像が必須であること' do
+        @cosme.image = nil
+        @cosme.valid?
+        expect(@cosme.errors.full_messages).to include "Image can't be blank"
       end
 
     end
