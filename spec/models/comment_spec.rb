@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Comment, type: :model do
   before do
     @comment = FactoryBot.build(:comment)
-     # sleep(1)
+    # sleep(1)
   end
   describe 'コメント投稿の保存' do
     context 'コメントが投稿できる場合' do
@@ -18,7 +18,7 @@ RSpec.describe Comment, type: :model do
       @comment.text = ''
       @comment.valid?
       expect(@comment.errors.full_messages).to include("Text can't be blank")
-    end     
+    end
     it 'ユーザーが紐付いていなければ投稿できない' do
       @comment.user = nil
       @comment.valid?
