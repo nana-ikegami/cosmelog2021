@@ -19,4 +19,14 @@ RSpec.describe "Cosmes", type: :request do
       expect(response.body).to include('検索')
     end
   end
+  describe 'GET #show' do
+    it 'showアクションにリクエストすると正常にレスポンスが返ってくる' do 
+      get cosme_path(@cosme)
+      expect(response.status).to eq 200
+    end
+    it 'showアクションにリクエストするとレスポンスに投稿済みのコスメのタイトルが存在する' do 
+      get cosme_path(@cosme)
+      expect(response.body).to include(@cosme.title)
+    end
+  end 
 end
