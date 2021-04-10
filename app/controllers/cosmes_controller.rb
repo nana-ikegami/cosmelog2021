@@ -43,9 +43,6 @@ class CosmesController < ApplicationController
   end
 
   def search
-    unless user_signed_in?
-      redirect_to root_path
-    end
     @cosmes = Cosme.search(params[:keyword])
   end
   
