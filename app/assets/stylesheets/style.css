@@ -258,6 +258,14 @@ color: #f0bbd6;
 .text{
 color: #f0bbd6;
 }
+.comments_lists{
+  padding-left: 20px;
+}
+
+.comments_list{
+  list-style-type: none;
+  padding-bottom: 5px;
+}
 
 /* ユーザーページ */
 .user__wrapper{
