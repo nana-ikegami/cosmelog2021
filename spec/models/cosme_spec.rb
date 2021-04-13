@@ -37,5 +37,11 @@ RSpec.describe Cosme, type: :model do
       @cosme.valid?
       expect(@cosme.errors.full_messages).to include("Image can't be blank")
     end
+
+    it 'パーソナルカラーが必須であること' do
+      @cosme.personalcolor_id = ''
+      @cosme.valid?
+      expect(@cosme.errors.full_messages).to include "Personalcolor can't be blank"
+    end
   end
 end
