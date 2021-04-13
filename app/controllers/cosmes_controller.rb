@@ -49,6 +49,6 @@ class CosmesController < ApplicationController
   private
 
   def cosme_params
-    params.require(:cosme).permit(:name, :image, :text, :title).merge(user_id: current_user.id)
+    params.require(:cosme).permit(:name, :image, :text, :title, :personalcolor_id).merge(user_id: current_user.id)
   end
 end
