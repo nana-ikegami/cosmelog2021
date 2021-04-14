@@ -2,5 +2,6 @@
   <%= link_to image_tag(cosme.image, class: :card__img ), cosme_path(cosme.id)%>
   <div class="card__body">
     <%= link_to cosme.title, cosme_path(cosme.id), class: :card__title%>
+    <%= cosme.personalcolor.name %>
   </div>
 </div>

@@ -14,6 +14,11 @@
       <%= f.file_field :image, id:"cosme_image", class:"cosme_image"%>
     </div>
 
+    <div class="field">
+    <%= f.label :personalcolor_id, "おすすめパーソナルカラー" %><br />
+    <%= f.collection_select(:personalcolor_id, Personalcolor.all, :id, :name, {}, {class:"color-select"}) %>
+    </div>
+
     <div class="actions">
       <%= f.submit "コスメを投稿", class:"form__btn" %>
     </div>

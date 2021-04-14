@@ -14,6 +14,10 @@ RSpec.describe 'Cosmes', type: :request do
       get root_path
       expect(response.body).to include(@cosme.title)
     end
+    it 'indexアクションにリクエストするとレスポンスに投稿済みのコスメのパーソナルカラーが存在する' do
+      get root_path
+      expect(response.body).to include(@cosme.personalcolor.name)
+    end
     it 'indexアクションにリクエストするとレスポンスに投稿検索フォームが存在する' do
       get root_path
       expect(response.body).to include('検索')
@@ -27,6 +31,10 @@ RSpec.describe 'Cosmes', type: :request do
     it 'showアクションにリクエストするとレスポンスに投稿済みのコスメのタイトルが存在する' do
       get cosme_path(@cosme)
       expect(response.body).to include(@cosme.title)
+    end
+    it 'showアクションにリクエストするとレスポンスに投稿済みのコスメのパーソナルカラーが存在する' do
+      get cosme_path(@cosme)
+      expect(response.body).to include(@cosme.personalcolor.name)
     end
   end
 end

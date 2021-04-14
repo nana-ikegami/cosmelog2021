@@ -1,18 +1,23 @@
 <main class="main">
   <div class="inner">
   <%= form_with(url: search_cosmes_path, local: true, method: :get, class: "search-form") do |form| %>
-    <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input" %>
+    <%= form.text_field :keyword, placeholder: "コスメを検索する", class: "search-input" %>
     <%= form.submit "検索", class: "search-btn" %>
   <% end %>
+  <%= search_form_for @q, url: cosme_personalcolor_path, class: "search-form" do |f| %>
+    <%= f.collection_select :personalcolor_id_eq, Personalcolor.where.not(id: 0), :id, :name, include_blank: "パーソナルカラー検索" %>
+    <%= f.submit '検索', class: "search-btn" %>
+<% end %>
+
   <% if user_signed_in? %>
       <div class="greeting">
-       <br>今日もメイクを楽しみましょう
+       今日もメイクを楽しみましょう
       <%= link_to "#{current_user.name}さん", user_path(current_user.id), class: :greeting__link%>
       </div>
   <% end %>
     <div style="position: relative; display:inline-block;">
       <img src="/assets/index.jpg" alt="", class="image">
-    <div class="font" style="position: absolute; top: 500px; left: 200px; max-width: 100%; max-height: 100%; padding: 30px; text-align: left;">
+    <div class="font" style="position: absolute; top: 450px; left: 200px; max-width: 100%; max-height: 100%; padding: 30px; text-align: left;">
       <p>みんなのお気に入りコスメを投稿しよう</p>
     </div></div>
       <div class="card__wrapper">

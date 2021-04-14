@@ -4,6 +4,7 @@ class CreateCosmes < ActiveRecord::Migration[6.0]
       t.string     :title,                  null: false
       t.text       :text,                   null: false
       t.references :user, foreign_key: true
+      t.integer    :personalcolor_id     , null: false
 
       t.timestamps
     end

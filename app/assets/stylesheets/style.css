@@ -64,6 +64,10 @@ align-items: center;
 min-height: calc(100vh - 200px);
 margin-top: 100px;
 }
+.card__body{
+color: #f0bbd6;
+font-size: 16px;
+}
 .card {
 width: calc((100% - 50px) / 5);
 margin-bottom: 40px;
@@ -102,7 +106,6 @@ width: 90%;
 height: 80vh;
 display: block;
 margin: auto;
-margin-top: 60px;
 }
 .font{
 color: #f79aca;
@@ -182,6 +185,10 @@ border: #f79aca 2px solid;
 color: azure;
 margin: 20px 0;
 }
+.color-select{
+height: 30px;
+width: 250px;
+}
 
 /* 詳細ページ */
 .cosme__wrapper{
@@ -189,10 +196,10 @@ min-height: calc(100vh - 161px);
 }
 .cosme__hedding{
 font-size: 24px;
-font-weight: bold;
 text-align: center;
 color: #f7aad2;
 padding-top: 50px;
+font-family: 'Train One', cursive;
 }
 .cosme__user{
 display: block;
@@ -223,6 +230,7 @@ display: flex;
 align-items: center;
 flex-direction: column;
 margin-bottom: 8px;
+color: #f0bbd6;
 }
 .detail__title{
 font-size: 20px;
@@ -255,16 +263,16 @@ text-decoration: none;
 border: #f79aca 2px solid;
 color: #f0bbd6;
 }
-.text{
+.comments_lists{
+padding-left: 20px;
 color: #f0bbd6;
 }
-.comments_lists{
-  padding-left: 20px;
-}
-
 .comments_list{
-  list-style-type: none;
-  padding-bottom: 5px;
+list-style-type: none;
+padding-bottom: 5px;
+}
+.contents.row{
+display: flex;
 }
 
 /* ユーザーページ */
@@ -322,10 +330,15 @@ border: #f79aca 2px solid;
 color: #f0bbd6;
 }
 .search-btn{
-  background-color: #f79aca;
-  border: #f79aca 2px solid;
-  color: azure;
+background-color: #f79aca;
+border: #f79aca 2px solid;
+color: azure;
 }
-.contents.row{
-margin: 30px 0 0 30px;
+select{
+border: #f79aca 2px solid;
+color: #818080;
+padding: 2px;
+width: 30%;
+margin: 0 10px 20px 0;
 }
+
