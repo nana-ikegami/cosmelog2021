@@ -55,7 +55,6 @@ class CosmesController < ApplicationController
   def cosme_params
     params.require(:cosme).permit(:name, :image, :text, :title, :personalcolor_id).merge(user_id: current_user.id)
   end
-  private
 
   def cosme_find
     @cosme = Cosme.find(params[:id])
@@ -64,5 +63,4 @@ class CosmesController < ApplicationController
   def search_personalcolor_cosme
     @q = Cosme.ransack(params[:q])
   end
-  
 end

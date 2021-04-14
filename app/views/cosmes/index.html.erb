@@ -11,7 +11,7 @@
 
   <% if user_signed_in? %>
       <div class="greeting">
-       <br>今日もメイクを楽しみましょう
+       今日もメイクを楽しみましょう
       <%= link_to "#{current_user.name}さん", user_path(current_user.id), class: :greeting__link%>
       </div>
   <% end %>

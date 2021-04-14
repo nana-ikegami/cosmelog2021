@@ -9,7 +9,7 @@ class Cosme < ApplicationRecord
     validates :title
     validates :text
     validates :image
-    validates :personalcolor_id, numericality: { other_than: 1 } 
+    validates :personalcolor_id, numericality: { other_than: 1 }
   end
 
   def self.search(search)

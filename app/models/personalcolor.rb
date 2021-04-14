@@ -5,9 +5,9 @@ class Personalcolor < ActiveHash::Base
     { id: 3, name: 'ブルベ夏' },
     { id: 4, name: 'イエベ秋' },
     { id: 5, name: 'ブルベ冬' },
-    { id: 6, name: 'どなたにも似合う' },
+    { id: 6, name: 'どなたにも似合う' }
   ]
 
   include ActiveHash::Associations
   has_many :cosmes
-  end
+end
