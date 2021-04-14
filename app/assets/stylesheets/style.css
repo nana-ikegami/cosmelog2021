@@ -268,12 +268,11 @@ padding-left: 20px;
 color: #f0bbd6;
 }
 .comments_list{
-  list-style-type: none;
-  padding-bottom: 5px;
+list-style-type: none;
+padding-bottom: 5px;
 }
 .contents.row{
 display: flex;
-margin: 30px 100px;
 }
 
 /* ユーザーページ */
