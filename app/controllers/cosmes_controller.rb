@@ -1,4 +1,5 @@
 class CosmesController < ApplicationController
+  before_action :cosme_find, only: [:show, :edit, :update, :destroy]
   before_action :search_personalcolor_cosme, only: [:index, :personalcolor]
 
   def index
@@ -19,18 +20,14 @@ class CosmesController < ApplicationController
   end
 
   def show
-    @cosme = Cosme.find(params[:id])
     @comment = Comment.new
     @comments = @cosme.comments
   end
 
   def edit
-    @cosme = Cosme.find(params[:id])
   end
 
   def update
-    @cosme = Cosme.find(params[:id])
-
     if @cosme.update(cosme_params)
       redirect_to cosme_path(@cosme.id)
     else
@@ -39,7 +36,6 @@ class CosmesController < ApplicationController
   end
 
   def destroy
-    @cosme = Cosme.find(params[:id])
     @cosme.destroy
     redirect_to root_path
   end
@@ -60,6 +56,10 @@ class CosmesController < ApplicationController
     params.require(:cosme).permit(:name, :image, :text, :title, :personalcolor_id).merge(user_id: current_user.id)
   end
   private
+
+  def cosme_find
+    @cosme = Cosme.find(params[:id])
+  end
 
   def search_personalcolor_cosme
     @q = Cosme.ransack(params[:q])
