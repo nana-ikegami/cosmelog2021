@@ -106,7 +106,6 @@ width: 90%;
 height: 80vh;
 display: block;
 margin: auto;
-margin-top: 60px;
 }
 .font{
 color: #f79aca;
@@ -272,6 +271,10 @@ color: #f0bbd6;
   list-style-type: none;
   padding-bottom: 5px;
 }
+.contents.row h2{
+color: #f0bbd6;
+margin-bottom: 20px;
+}
 
 /* ユーザーページ */
 .user__wrapper{
@@ -328,10 +331,18 @@ border: #f79aca 2px solid;
 color: #f0bbd6;
 }
 .search-btn{
-  background-color: #f79aca;
-  border: #f79aca 2px solid;
-  color: azure;
+background-color: #f79aca;
+border: #f79aca 2px solid;
+color: azure;
 }
 .contents.row{
 margin: 30px 0 0 30px;
 }
+select{
+border: #f79aca 2px solid;
+color: #818080;
+padding: 2px;
+width: 30%;
+margin: 0 10px 10px 0;
+}
+

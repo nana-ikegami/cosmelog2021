@@ -1,4 +1,6 @@
 class CosmesController < ApplicationController
+  before_action :search_personalcolor_cosme, only: [:index, :personalcolor]
+
   def index
     @cosmes = Cosme.all
   end
@@ -46,9 +48,21 @@ class CosmesController < ApplicationController
     @cosmes = Cosme.search(params[:keyword])
   end
 
+  def personalcolor
+    @cosmes = @q.result
+    personalcolor_id = params[:q][:personalcolor_id_eq]
+    @personalcolor = Personalcolor.find_by(id: personalcolor_id)
+  end
+
   private
 
   def cosme_params
     params.require(:cosme).permit(:name, :image, :text, :title, :personalcolor_id).merge(user_id: current_user.id)
   end
+  private
+
+  def search_personalcolor_cosme
+    @q = Cosme.ransack(params[:q])
+  end
+  
 end
