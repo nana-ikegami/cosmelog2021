@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: cosmelog2021_production
-  username: cosmelog2021
-  password: <%= ENV['COSMELOG2021_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
