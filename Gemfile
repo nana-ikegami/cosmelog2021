@@ -62,3 +62,7 @@ gem 'faker'
 gem 'pry-rails'
 gem 'active_hash'
 gem 'ransack'
+
+group :production do
+  gem 'unicorn', '5.4.1'
+end
