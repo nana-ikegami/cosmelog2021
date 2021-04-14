@@ -3,7 +3,6 @@
     <%= f.submit '検索', class: "search-btn" %>
 <% end %>
     <div class="contents row">
-          <h2>パーソナルカラー別検索結果 <%= @personalcolor.name %></h2>
         <% @cosmes.each do |cosme| %>
               <%= render partial: "cosme", locals: { cosme: cosme } %>
         <% end %>
