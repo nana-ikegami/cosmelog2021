@@ -137,7 +137,7 @@ display: inline;
 .container{
 color: #f79aca;
 margin: 40px 520px;
-background-image: url(image2.jpg);
+/* background-image: url(image2.jpg); */
 background-repeat: no-repeat;
 background-size:cover;
 width: 400px;
