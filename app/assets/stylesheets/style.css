@@ -137,7 +137,6 @@ display: inline;
 .container{
 color: #f79aca;
 margin: 40px 520px;
-/* background-image: url(image2.jpg); */
 background-repeat: no-repeat;
 background-size:cover;
 width: 400px;
@@ -341,4 +340,3 @@ padding: 2px;
 width: 30%;
 margin: 0 10px 20px 0;
 }
-
