@@ -68,7 +68,7 @@ http://54.199.123.227/
 パーソナルカラーの選択をしてもらって投稿するように実装しました。
 
 ### **3. トップページ、投稿一覧**
-[![Image from Gyazo](https://i.gyazo.com/b3448c64f717926c9683c74011aa40de.gif)](https://gyazo.com/b3448c64f717926c9683c74011aa40de)
+[![Image from Gyazo](https://i.gyazo.com/b8e7411c68bda4c90892dd8c2c93aaea.gif)](https://gyazo.com/b8e7411c68bda4c90892dd8c2c93aaea)
 トップページの画像の下に投稿されたコスメが一覧表示されています。
 
 ### **4. 投稿者のマイページ**
