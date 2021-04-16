@@ -74,7 +74,7 @@ http://54.199.123.227/
 投稿されているコスメにコメントができます。気になることがあったら質問もできるようにするために実装しました。
 [![Image from Gyazo](https://i.gyazo.com/68d24ff83f124236f7b83fb2a0e86fe7.gif)](https://gyazo.com/68d24ff83f124236f7b83fb2a0e86fe7)
 6. コスメの投稿者の編集、削除機能
-[![Image from Gyazo](https://i.gyazo.com/2b3c57b5e178107371a510e5e4462227.gif)](https://gyazo.com/2b3c57b5e178107371a510e5e4462227)
+[![Image from Gyazo](https://i.gyazo.com/869a384f25f2a8ec38fa49a186842d7d.gif)](https://gyazo.com/869a384f25f2a8ec38fa49a186842d7d)
 使用感の変更があれば編集、削除できるようにしました。また、投稿を削除したらその投稿に紐づいているコメントも消えるように実装しています。
 今回はパーソナルカラーの編集をしました。
 7. 二種類の検索機能
