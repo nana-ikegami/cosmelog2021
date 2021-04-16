@@ -67,24 +67,20 @@ http://54.199.123.227/
 [![Image from Gyazo](https://i.gyazo.com/6bf77ba3b3403bffd188b957f5f1f2c9.gif)](https://gyazo.com/6bf77ba3b3403bffd188b957f5f1f2c9)
 パーソナルカラーの選択をしてもらって投稿するように実装しました。
 
-### **3. トップページ、投稿一覧**
-[![Image from Gyazo](https://i.gyazo.com/b8e7411c68bda4c90892dd8c2c93aaea.gif)](https://gyazo.com/b8e7411c68bda4c90892dd8c2c93aaea)
-トップページの画像の下に投稿されたコスメが一覧表示されています。
-
-### **4. 投稿者のマイページ**
+### **3. 投稿者のマイページ**
 [![Image from Gyazo](https://i.gyazo.com/6c4e5c3e29a668c51301ecb54e3bd4de.gif)](https://gyazo.com/6c4e5c3e29a668c51301ecb54e3bd4de)
 ログインしている投稿者のマイページです。
 
-### **5. コメント機能**
+### **4. コメント機能**
 投稿されているコスメにコメントができます。気になることがあったら質問もできるようにするために実装しました。
 [![Image from Gyazo](https://i.gyazo.com/68d24ff83f124236f7b83fb2a0e86fe7.gif)](https://gyazo.com/68d24ff83f124236f7b83fb2a0e86fe7)
 
-### **6. コスメの投稿者の編集、削除機能**
+### **5. コスメの投稿者の編集、削除機能**
 [![Image from Gyazo](https://i.gyazo.com/869a384f25f2a8ec38fa49a186842d7d.gif)](https://gyazo.com/869a384f25f2a8ec38fa49a186842d7d)
 使用感の変更があれば編集、削除できるようにしました。また、投稿を削除したらその投稿に紐づいているコメントも消えるように実装しています。
 今回はパーソナルカラーの編集をしました。
 
-## **7. 二種類の検索機能**
+## **6. 二種類の検索機能**
 [![Image from Gyazo](https://i.gyazo.com/5e7fc46e65ae3cd18a04ab41d0f6e89c.gif)](https://gyazo.com/5e7fc46e65ae3cd18a04ab41d0f6e89c)
 指定の文字列での検索とパーソナルカラーごとのプルダウン検索をできるように実装しました。
 
